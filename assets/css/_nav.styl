@@ -1,0 +1,29 @@
+breakpoint-small = 600px
+
+ul.nav 
+	background: blue
+	margin: 0
+	padding:12px
+	text-align: center
+	list-style: none
+
+ul.nav a 
+	font-weight: 500
+	text-decoration: none
+	transition: color .2s 
+	color: silver
+	&:hover 
+		color: white
+	
+	
+.nav li
+	margin: 12px 12px;
+	@media (min-width: breakpoint-small)
+		display: inline-block	
+		float: right
+
+.nav li.brand
+	@media (min-width: breakpoint-small) 
+		float:left
+	a
+		font-weight: 800
