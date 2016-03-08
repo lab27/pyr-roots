@@ -13,8 +13,22 @@ module.exports =
 
   stylus:
     use: [axis(), rupture(), autoprefixer()]
+    sourcemap: true
 
   locals:
     marked: marked
 
   extensions: [contentful(config)]
+
+  server: 
+  	clean_urls: true
+
+  locals: 
+  	nav_links: [
+  		'about',
+  		'reflections',
+  		'media',
+  		'stories'
+  	]
+
+
