@@ -1,29 +1,45 @@
-breakpoint-small = 600px
-
-ul.nav 
+breakpoint-medium = 900px
+breakpoint-small = 664px
+.nav 
 	background: blue
-	margin: 0
-	padding:12px
-	text-align: center
-	list-style: none
+	ul 
+		margin: 0
+		padding:12px
+		text-align: center
+		list-style: none
+		a 
+			font-weight: 500
+			text-decoration: none
+			transition: color .2s 
+			color: silver
+			&:hover 
+				color: white
+	.nav-left
+		float: none
+		@media (min-width: breakpoint-small)
+			width: 100%
+		@media (min-width: breakpoint-medium)
+			width: auto
+			float: left
 
-ul.nav a 
-	font-weight: 500
-	text-decoration: none
-	transition: color .2s 
-	color: silver
-	&:hover 
-		color: white
-	
+
+	.nav-right
+		float: none
+		@media (min-width: breakpoint-small)
+			width: 100%
+		@media (min-width: breakpoint-medium)
+			width: auto
+			float: right
 	
 .nav li
-	margin: 12px 12px;
+	margin:  18px 18px;
 	@media (min-width: breakpoint-small)
 		display: inline-block	
-		float: right
+		float: none
 
 .nav li.brand
-	@media (min-width: breakpoint-small) 
-		float:left
+	margin-top:14px
+	margin-left: 12px
 	a
 		font-weight: 800
+		font-size: 21px
