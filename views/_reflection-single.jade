@@ -1,0 +1,9 @@
+extends layout
+
+block content
+	div.article
+		h2= entry.title
+		p.byline by Ned Presnall
+
+		p.date= entry.date
+		!= marked(entry.body)

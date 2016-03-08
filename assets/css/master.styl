@@ -1,12 +1,56 @@
 @import '_settings'
 @import '_nav'
+@import '_type'
+
+
 normalize-css()
 base()
 clearfix()
+
+html 
+  box-sizing: border-box;
+
+*, *:before, *:after
+  box-sizing: inherit;
 
 body
   background: white
   padding: 0;
   
 .main
+	padding:0
+
+.article
+	// h2,.byline,.date
+	color: dark-gray
 	padding:24px
+	font-size:18px
+	line-height:26px
+	max-width:700px
+	margin:0 auto
+	
+.hero
+	padding:15vw 24px;
+	background: url(../img/archie-blue.jpg) no-repeat 50% 0
+	background-size:cover;
+	min-height: 40vw
+	h1
+		color:white
+		text-align:center
+
+.features
+	padding:24px
+	text-align:center
+.feature
+	border-box-html()
+	@media (min-width:768px)
+  	width: 33.3333%
+  	float:left
+  	padding-right:12px
+  	&:last-child
+  		padding-right: 0
+
+.feature-cta
+	button: blue 'medium'
+	
+@import '_footer'

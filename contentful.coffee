@@ -3,5 +3,7 @@ module.exports =
   management_token: '814642036d91dc83781bbf9db59f24a531b21a8ac083219ec1350b0a2d14afad'
   space_id: 'byge3vhksnfg'
   content_types: 
-    posts:                          
-      id: '4vCR9yfFockES8m8Gao0gQ'                   
+    reflections:                          
+      id: '4vCR9yfFockES8m8Gao0gQ'
+      template: 'views/_reflection-single.jade'                   
+      path: (entry) -> "reflections/#{entry.slug}"

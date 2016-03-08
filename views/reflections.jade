@@ -3,10 +3,10 @@ extends layout
 block content
   h3 Reflections
 
-  ul
-    - for post in contentful.posts
+  ul.reflection-list
+    - for post in contentful.reflections
       li
-        h4= post.title
-        p= post.body
+        h4: a(href= post._url)= post.title
+        p= post.date
         
   

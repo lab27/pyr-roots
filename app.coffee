@@ -23,12 +23,3 @@ module.exports =
   server: 
   	clean_urls: true
 
-  locals: 
-  	nav_links: [
-  		'about',
-  		'reflections',
-  		'media',
-  		'stories'
-  	]
-
-

@@ -1,16 +1,23 @@
 extends layout
 
 block content
-  h3 Welcome to roots!
-  :markdown
-    Find tutorials and documentation at http://roots.cx : )
+  div.hero
+    h1 A place for answers about addiction &amp; recovery.
 
-  // Once you've added a content type and posts into Contentful
-  // go update your app.coffee config and then test out iterating
-  // over your content type here!
+  div.features
+    div.feature
+      h3 Answers
+      p Are you addicted to substances or behaviors? Do you know someone who is? Find answers to many common questions about addiction and recovery.
+      div.feature-cta Explore &raquo;
+    div.feature
+      h3 Stories
+      p Watch short videos of people who are in recovery from addiction to substances or behaviors. Find out what works for them.
+      div.feature-cta View &raquo;
 
-  //- ul
-    //- - for post in contentful.posts
-      //- li
-        //- h4= post.title
-        //- != marked(post.body)
+    div.feature
+      h3 Reflections
+      p Read thoughts on issues related to addiction and recovery from experts in the field. 
+      div.feature-cta Read &raquo;
+
+  
+
